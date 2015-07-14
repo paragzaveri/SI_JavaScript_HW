@@ -191,11 +191,11 @@ document.getElementById('submitToggleClass').addEventListener('click', function(
 			_toggleClass[i].className = _toggleClass[i].className.replace(_toggleClassName, "");
 		}
 		else {
-			if (_toggleClass[i] == "") {
-				_toggleClass.className += _toggleClassName;
+			if (_toggleClass[i].className == "") {
+				_toggleClass[i].className += _toggleClassName;
 			}
 			else {
-				_toggleClass.className += (" " + _toggleClassName);
+				_toggleClass[i].className += (" " + _toggleClassName);
 			}
 		}
 	}
