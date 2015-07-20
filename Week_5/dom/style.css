@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+}
+div {
+	border: 2px solid black;
+	width: calc(100%/3 - 4px);
+	float: left;
+	text-align: center;
+	cursor:pointer;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#addClass, #removeClass, #tagClassAdd, #tagClassRemove, #tagClassToggle, #toggleClass {
+	text-align: center;
+	width: 100px;
+}
+#submitAddClass,#submitRemoveClass, #submitToggleClass,#selectAllBoxes, #spin, #rotate, #bothSR, #originalSpin{
+	cursor:pointer;
+}
+
+.boxesH2Tag {
+  text-align: center;
+}
+
+.buttons {
+  border: 2px solid black;
+  margin: 2% 40% 3% 40%;
+  text-align: center;
+
+}
+
+.Week4 {
+	float: left;
+	padding: 0 2% 0 2%;
+  border: 2px solid black;
+  margin: 0 0 0 22%;
+}
+
+.Week5 {
+  float: right;
+  padding-top: 1px;
+
+  padding: 0 2% 3px 2%;
+  border: 2px solid black;
+  margin: 0 25% 0 0;
+}
+
+/*   Begin Add For Week 5 Homework */
+
+.selected{
+    border:2px solid blue;
+}
+
+@-moz-keyframes originalspin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes originalspin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes originalspin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.originalSpin{
+  -webkit-animation: originalspin 2s linear;
+  -moz-animation: originalspin 2s linear;
+  -o-animation: originalspin 2s linear;
+  -ms-animation: originalspin 2s linear;
+}
+
+/* End Add for Week 5 Homework */
+
+.spin {
+  transform: perspective(600px) rotateY(45deg);
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 10000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 10000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 10000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+from {
+  -webkit-transform:rotateY(0deg);
+}
+
+to {
+  -webkit-transform:rotateY(360deg);
+}
+}
+
+.rotate {
+  transform: perspective(600px) rotateZ(0deg);
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-duration: 10000ms;
+  -webkit-animation-delay: 0ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spinner;
+  -moz-animation-duration: 10000ms;
+  -moz-animation-delay: 0ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spinner;
+  -ms-animation-duration: 10000ms;
+  -ms-animation-delay: 0ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinner {
+from {
+  -webkit-transform:rotateZ(0deg);
+}
+
+to {
+  -webkit-transform:rotateZ(360deg);
+}
+}
+
+
+.bothSR {
+  transform: perspective(600px) rotateY(0deg) rotateZ(0deg);
+
+  -webkit-animation-name: doublespin;
+  -webkit-animation-duration: 10000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: doublespin;
+  -moz-animation-duration: 10000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: doublespin;
+  -ms-animation-duration: 10000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes doublespin {
+from {
+  -webkit-transform: rotateY(0deg) rotateZ(0deg);
+}
+
+to {
+  -webkit-transform: rotateY(360deg) rotateZ(360deg);
+  
+}
+}
+
+
